@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: none;
     padding: none;
     box-sizing: border-box;
@@ -7,13 +7,16 @@ font-family: 'Manrope', sans-serif;
 
 body {
     background-color:rgb(255, 249, 240);
-}
+} */
 
-nav {
+/* Old CSS */
+
+/* nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 nav ul {
@@ -36,13 +39,132 @@ section.hero {
 }
 
 section.hero h1 {
-    font-weight: 600;
+    font-weight: 800;
     font-size: 40pt;
 }
 
 section.work {
     display: flex;
     justify-content: flex-start;
-    padding: 0.5rem 3rem ;
+    padding: 0.5rem 3rem;
+}
+ */
+
+ /* Above is the desktp nav bar code */
+
+ /* Below is code for the mobile nav bar  */
+
+ *,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  font-family: Manrope;
+}
+
+:root {
+  --bar-width: 28px;
+  --bar-height: 4px;
+  --hamburger-gap: 4px;
+  --foreground: #333;
+  --background: white;
+  --hamburger-margin: 8px;
+  --animation-timing: 200ms ease-in-out;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+}
+
+.hamburger-menu {
+    
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);
+padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--hamburger-gap);
+  width: max-content;
+  position: absolute;
+  top: var(--hamburger-margin);
+  left: var(--hamburger-margin);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.hamburger-menu:has(input:checked) {
+  --foreground: white;
+  --background: #333;
+}
+
+.hamburger-menu:has(input:focus-visible)::before,
+.hamburger-menu:has(input:focus-visible)::after,
+.hamburger-menu input:focus-visible {
+  border: 1px solid var(--background);
+  box-shadow: 0 0 0 1px var(--foreground);
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after,
+.hamburger-menu input {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: var(--foreground);
+  border-radius: 9999px;
+  transform-origin: left center;
+  transition: opacity var(--animation-timing), width var(--animation-timing),
+    rotate var(--animation-timing), translate var(--animation-timing),
+    background-color var(--animation-timing);
+}
+
+.hamburger-menu input {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  pointer-events: none;
+}
+
+.hamburger-menu:has(input:checked)::before {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / -2);
+}
+
+.hamburger-menu:has(input:checked)::after {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / 2);
+}
+
+.hamburger-menu input:checked {
+  opacity: 0;
+  width: 0;
+}
+
+.sidebar {
+  padding: 2rem;
+  transition: translate var(--animation-timing);
+  translate: -100%;
+  padding: 0.5rem 2rem;
+  padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
+  background-color: var(--foreground);
+  color: var(--background);
+  max-width: 16rem;
+  min-height: 100vh;
+}
+.sidebar nav {
+    padding: 2rem 4rem;
+}
+
+.sidebar nav div {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger-menu:has(input:checked) + .sidebar {
+  translate: 0;
+}
