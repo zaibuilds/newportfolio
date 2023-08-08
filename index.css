@@ -11,7 +11,8 @@ body {
 
 
 
-nav {
+header .topnav {
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -19,7 +20,7 @@ nav {
     flex-wrap: wrap;
 }
 
-nav ul {
+.topnav ul {
     display: flex;
     flex-direction: row;
     gap:2rem;
@@ -29,6 +30,7 @@ nav ul {
 nav button {
     margin-left: 2.5rem;
 }
+
 
 section.hero {
     display: flex;
@@ -73,7 +75,6 @@ section.work {
     padding: 0.5rem 3rem;
 }
 
-/* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 600px) {
  *
  *::after,
@@ -82,10 +83,14 @@ section.work {
  }
  
  body {
-     background-color: whitesmoke;
+background-color:rgb(255, 249, 240);
    margin: 0;
    font-family: Manrope;
  }
+
+ header .topnav {
+  display: none;
+}
  
  
  
@@ -194,6 +199,7 @@ section.work {
    color: var(--background);
    */
  }
+ 
  .sidebar nav {
      padding: 2rem 4rem;
  }
@@ -224,4 +230,4 @@ section.work {
    translate: 0;
  }
  
-  }
+}
