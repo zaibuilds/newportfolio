@@ -57,7 +57,7 @@ a.active, a:hover {
   display: none;
 }
 
-/* Mobile Nav Bar Below */
+/* Mobile Nav Bar Media Query Below */
 
 @media (max-width: 900px) {
 
@@ -110,4 +110,31 @@ a.active, a:hover {
   }
 
 
+}
+
+section.hero {
+  display: flex;
+  padding: 4rem 8rem;
+}
+
+.wrapper {
+  display: inline-flex;
+}
+
+.wrapper .static-txt {
+  font-size: 48px;
+}
+
+.wrapper .dynamic-txts {
+  margin-left: 16px;
+}
+
+.dynamic-txts li {
+  font-size: 40px;
+  list-style: none;
+  font-weight: 600;
+}
+
+#pd {
+  color: #FF79C6;
 }
