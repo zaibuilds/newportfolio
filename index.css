@@ -109,32 +109,102 @@ a.active, a:hover {
     left: 0;
   }
 
+/* Responsive Animation */
+
+.wrapper {
+  display: inline-flex;
+  align-items: first baseline;
+  justify-content: center;
+  padding: 2rem 4rem;
+}
+
+.wrapper .static-txt {
+  font-size: 44px;
+}
+
+.wrapper .dynamic-txts {
+  height: 64px;
+  line-height: 64px;
+  overflow: hidden;
+
+}
+
+
+
 
 }
 
 section.hero {
   display: flex;
-  padding: 4rem 8rem;
+
 }
 
 .wrapper {
   display: inline-flex;
+  align-items: first baseline;
+  justify-content: center;
+  padding: 4rem 8rem;
 }
 
 .wrapper .static-txt {
-  font-size: 48px;
+  font-size: 44px;
 }
 
 .wrapper .dynamic-txts {
-  margin-left: 16px;
+  height: 64px;
+  line-height: 64px;
+  overflow: hidden;
+
 }
 
 .dynamic-txts li {
-  font-size: 40px;
+  position: relative;
+  top: 0;
+  font-size: 48px;
   list-style: none;
   font-weight: 600;
+  animation: slide 6s steps(3) infinite;
+}
+
+@keyframes slide {
+  100% {
+  top: -190px;
+  }
+
 }
 
 #pd {
-  color: #FF79C6;
+  color: #d2589d;
+}
+
+#ct {
+  color: #45dc6b;
+}
+
+
+#se {
+  color: #e16344;
+}
+
+.dynamic-txts li span {
+  position: relative;
+}
+
+
+.dynamic-txts li span::after {
+content: "";
+position: absolute;
+left: 0;
+height: 100%;
+width: 100%;
+background-color:rgb(255, 249, 240);
+border-left: 2px solid;
+animation: typing 2s steps(22) infinite;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
 }
