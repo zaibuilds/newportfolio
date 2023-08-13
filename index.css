@@ -109,17 +109,15 @@ a.active, a:hover {
     left: 0;
   }
 
-/* Responsive Hero */
-
 
 
 
 }
 
 
-/* Hero Section */
+/* Old Hero Section */
 
-section.hero {
+/* section.hero {
   display: flex;
 
 }
@@ -192,4 +190,7 @@ animation: typing 2s steps(22) infinite;
     left: 100%;
     margin: 0 -35px 0 35px;
   }
-}
+} */
+
+/* New Hero Section */
+
