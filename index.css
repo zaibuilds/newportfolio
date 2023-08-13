@@ -59,7 +59,7 @@ a.active, a:hover {
 
 /* Mobile Nav Bar Media Query Below */
 
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
 
   nav {
     display: flex;
@@ -109,30 +109,15 @@ a.active, a:hover {
     left: 0;
   }
 
-/* Responsive Animation */
-
-.wrapper {
-  display: inline-flex;
-  align-items: first baseline;
-  justify-content: center;
-  padding: 2rem 4rem;
-}
-
-.wrapper .static-txt {
-  font-size: 44px;
-}
-
-.wrapper .dynamic-txts {
-  height: 64px;
-  line-height: 64px;
-  overflow: hidden;
-
-}
+/* Responsive Hero */
 
 
 
 
 }
+
+
+/* Hero Section */
 
 section.hero {
   display: flex;
