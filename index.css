@@ -78,7 +78,7 @@ a.active, a:hover {
   ul { 
     z-index: 1;
     position: fixed;
-    width: 100%;
+    width: 90%;
     height: 100vh;
     background-color:rgb(255, 249, 240);
     top: 8rem;
@@ -278,7 +278,9 @@ p.headline {
   padding: 0rem 6rem;
 }
 
-section.projects {
+
+
+section.projects h2 {
   display: flex;
   justify-content: flex-start;
   padding: 2rem 6rem;
