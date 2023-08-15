@@ -11,6 +11,7 @@ const typeEffect = () => {
  const currentWord = words[wordIndex];
  const currentChar = currentWord.substring(0, charIndex);
  dynamicText.textContent = currentChar;
+ dynamicText.classList.add("stop-blinking");
 
  if(!isDeleting && charIndex < currentWord.length) {
     // If condition is true type the next character
@@ -22,7 +23,10 @@ const typeEffect = () => {
     setTimeout(typeEffect, 100 );
 
  } else {
+    // If word is deleted then switch to the next word 
     isDeleting = !isDeleting;
+    dynamicText.classList.remove("stop-blinking");
+    wordIndex = !isDeleting ? (wordIndex + 1) % words.length : wordIndex;
     setTimeout(typeEffect, 1200);
  }
 }

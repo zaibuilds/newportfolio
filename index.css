@@ -195,13 +195,14 @@ animation: typing 2s steps(22) infinite;
 
 section.hero {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 2rem;
+  margin-left: 4rem;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: 600;
   color: rgb(37, 37, 37);
 }
@@ -217,8 +218,19 @@ h1 span::before {
   position: absolute;
   top: 27.5%;
   right: -8px;
-  height: 30px;
+  height: 60px;
   width: 2px;
   background-color: rgb(200, 138, 30);
   transform: translateY(-10%);
+  animation: blink 0.7s infinite;
+}
+
+h1 span.stop-blinking::before {
+  animation: none;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
