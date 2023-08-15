@@ -207,6 +207,7 @@ h1 {
 }
 
 h1 span {
+  position: relative;
   color: rgb(200, 138, 30);
 
 }
@@ -214,7 +215,10 @@ h1 span {
 h1 span::before {
   content: "";
   position: absolute;
+  top: 27.5%;
+  right: -8px;
   height: 30px;
   width: 2px;
   background-color: rgb(200, 138, 30);
+  transform: translateY(-10%);
 }
