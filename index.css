@@ -58,7 +58,7 @@ a.active, a:hover {
 
 /* Mobile Nav Bar Media Query Below */
 
-@media (max-width: 1050px) {
+@media (max-width: 856px) {
 
   nav {
     display: flex;
@@ -76,6 +76,7 @@ a.active, a:hover {
   }
 
   ul { 
+    z-index: 1;
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -108,6 +109,34 @@ a.active, a:hover {
     left: 0;
   }
 
+  section.hero {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    margin-left: 4rem;
+  }
+  
+  h1 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(37, 37, 37);
+  }
+  
+   
+  h1 span::before {
+display: none;
+  }
+  
+  h1 span.stop-blinking::before {
+    animation: none;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
 
 
 
@@ -202,7 +231,7 @@ section.hero {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 600;
   color: rgb(37, 37, 37);
 }
