@@ -1,0 +1,113 @@
+* {
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background-color:rgb(255, 249, 240);
+} 
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav img.class {
+  max-width: 12rem;
+}
+  
+nav ul {
+  float: right;
+  margin: right 20px;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 1rem;
+  }
+
+nav ul li a {
+color: rgb(62, 62, 62);
+font-weight: 500;
+font-size: 20px;
+text-decoration: none;
+text-transform: uppercase;
+padding: 0.5rem 1rem;
+border-radius: 4px;
+}
+
+a.active, a:hover {
+  background-color: rgb(62, 62, 62);
+  color: whitesmoke;
+  transition: 0.5s;
+
+}
+
+.checkbtn {
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+/* Mobile Nav Bar Below */
+
+@media (max-width: 900px) {
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  nav img {
+    max-width: 6rem;
+  }
+
+  ul { 
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color:rgb(255, 249, 240);
+    top: 8rem;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0px;
+    line-height: 30px;
+
+  }
+  
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a.active, a:hover {
+    background-color: rgb(62, 62, 62);
+    color: whitesmoke;
+    transition: 0.5s;
+  
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+
+}
