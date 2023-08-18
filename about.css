@@ -109,6 +109,11 @@ a.active, a:hover {
     left: 0;
   }
 
+  section.music h2 {
+    margin: none;
+    padding: none;
+  }
+
   section.music h2 p {
     font-size: 1.125rem;
   }
