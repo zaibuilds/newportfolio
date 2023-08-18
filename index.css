@@ -285,3 +285,17 @@ section.projects h2 {
   justify-content: flex-start;
   padding: 2rem 6rem;
 }
+
+.portfolio {
+  padding: 2rem 6rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.portfolio a  {
+  pointer-events: none;
+}
+
+.portfolio img {
+  max-width: 60rem;
+}
