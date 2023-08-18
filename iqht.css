@@ -111,31 +111,3 @@ a.active, a:hover {
 
 
 }
-
-section.bio {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 3rem;
-}
-
-section.bio p {
-  font-size: 20px;
-}
-
-section.music {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0rem 1rem;
-}
-
-section.music h2 {
-  font-size: 1.5rem;
-  padding-bottom: 1rem
-}
-
-.spotify_embed {
-  padding: 2rem;
-}
