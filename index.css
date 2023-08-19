@@ -242,7 +242,7 @@ section.hero {
 h1 {
   font-size: 3.5rem;
   font-weight: 600;
-  color: rgb(37, 37, 37);
+  color: rgb(40, 40, 40);
 }
 
 h1 span {
@@ -276,6 +276,8 @@ h1 span.stop-blinking::before {
 p.headline {
   font-size: 24px;
   padding: 0rem 6rem;
+  font-weight: 500;
+  color: rgb(62, 62, 62);
 }
 
 button.contactbtn {
@@ -291,12 +293,27 @@ button.contactbtn {
   color: rgb(62, 62, 62);
 }
 
+button.contactbtn:hover {
+  margin: 3rem 6rem;
+  padding: 0.75rem 2.25rem;
+  border-radius: 40px;
+  border-width: px;
+  border-color: rgb(158, 158, 158);
+  border-style: solid;
+  font-size: 1.125rem;
+  font-weight: 600;
+  background-color: rgb(62, 62, 62);
+  color:  rgb(255, 249, 240);
+  transition: ease-in-out 0.5s;
+}
+
 
 
 section.projects h2 {
   display: flex;
   justify-content: flex-start;
   padding: 1rem 6.25rem;
+  color: rgb(62, 62, 62); 
 }
 
 .portfolio {
