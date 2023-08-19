@@ -278,12 +278,25 @@ p.headline {
   padding: 0rem 6rem;
 }
 
+button.contactbtn {
+  margin: 3rem 6rem;
+  padding: 0.75rem 2.25rem;
+  border-radius: 40px;
+  border-width: px;
+  border-color: rgb(158, 158, 158);
+  border-style: solid;
+  font-size: 1.125rem;
+  font-weight: 600;
+  background-color: rgb(255, 249, 240);
+  color: rgb(62, 62, 62);
+}
+
 
 
 section.projects h2 {
   display: flex;
   justify-content: flex-start;
-  padding: 2rem 6rem;
+  padding: 1rem 6.25rem;
 }
 
 .portfolio {
