@@ -280,6 +280,13 @@ p.headline {
   color: rgb(62, 62, 62);
 }
 
+.contactbtn_container a {
+  background-color:rgb(255, 249, 240); 
+  color: rgb(255, 249, 240);
+}
+
+
+
 button.contactbtn {
   margin: 3rem 6rem;
   padding: 0.75rem 2.25rem;
@@ -291,7 +298,9 @@ button.contactbtn {
   font-weight: 600;
   background-color: rgb(255, 249, 240);
   color: rgb(62, 62, 62);
+  cursor: pointer;
 }
+
 
 button.contactbtn:hover {
   margin: 3rem 6rem;
@@ -322,8 +331,14 @@ section.projects h2 {
   justify-content: flex-start;
 }
 
-.portfolio a  {
-  pointer-events: none;
+.portfolio a {
+  color:  rgb(255, 249, 240);
+  background-color: rgb(255, 249, 240);
+}
+
+.portfolio a :hover {
+  color:  rgb(255, 249, 240);
+  background-color: rgb(255, 249, 240);
 }
 
 .portfolio img {
