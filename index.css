@@ -339,7 +339,7 @@ section.projects h2 {
 }
 
 button.read_more {
-  padding: 0.75rem 2.25rem;
+  padding: 0.75rem 2rem;
   border-radius: 8px;
   border-color: rgb(158, 158, 158);
   border-style: solid;
@@ -352,7 +352,7 @@ button.read_more {
 
 
 button.read_more:hover {
-  padding: 0.75rem 2.25rem;
+  padding: 0.75rem 2rem;
   border-radius: 8px;
   border-color: rgb(158, 158, 158);
   border-style: solid;
