@@ -147,6 +147,10 @@ font-size: 1.5rem;
     }
   }
 
+  .portfolio a img {
+    max-width: 20rem;
+  }
+
 
 
 }
@@ -329,6 +333,8 @@ section.projects h2 {
   padding: 2rem 6rem;
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
+  color: rgb(62, 62, 62); 
 }
 
 .portfolio a {
