@@ -57,7 +57,7 @@ a.active, a:hover {
   display: none;
 }
 
-/* Mobile Nav Bar Below */
+/* Media Query Below */
 
 @media (max-width: 900px) {
 
