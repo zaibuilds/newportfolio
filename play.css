@@ -115,8 +115,22 @@ a.active, a:hover {
 section.intro p {
  
     font-size: 24px;
-    padding: 0rem 6rem;
+    padding: 2rem 6rem 0rem 6rem;
     font-weight: 500;
     color: rgb(62, 62, 62);
 
+}
+
+.projects {
+  padding: 4rem 6rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  color: rgb(62, 62, 62); 
+  gap: 6rem;
+}
+
+.projects img {
+  max-width: 60rem;
+  border-radius: 0.5rem;
 }
