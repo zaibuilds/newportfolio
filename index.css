@@ -65,6 +65,7 @@ a.active, a:hover {
     justify-content: center;
     align-items: center;
     gap: 6rem;
+    padding-top: 3rem;
   }
 
   .checkbtn {
@@ -127,14 +128,7 @@ font-size: 1.5rem;
   }
    
   h1 span::before {
-    content: "";
-    position: absolute;
-    right: -8px;
-    max-height: 24px;
-    width: 2px;
-    background-color: rgb(200, 138, 30);
-    transform: translateY(-10%);
-    animation: blink 0.7s infinite;
+    display: none;
   }
   
   h1 span.stop-blinking::before {
@@ -320,7 +314,12 @@ button.contactbtn:hover {
   transition: ease-in-out 0.5s;
 }
 
-
+section.daily_ui h2 {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem 6.25rem;
+  color: rgb(62, 62, 62); 
+}
 
 section.projects h2 {
   display: flex;
@@ -348,6 +347,7 @@ button.read_more {
   background-color: rgb(255, 249, 240);
   color: rgb(62, 62, 62);
   cursor: pointer;
+
 }
 
 
