@@ -341,6 +341,18 @@ color: rgb(62, 62, 62);
   cursor: pointer;
 }
 
+.filter_btn:hover {
+  padding: 0.75rem 2rem;
+  border-radius: 40px;
+  border-color: rgb(158, 158, 158);
+  border-style: solid;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: rgb(62, 62, 62);
+  color:  rgb(255, 249, 240);
+  transition: ease-in-out 0.5s;
+}
+
 
 section.live_case_studies h2 {
   display: flex;
