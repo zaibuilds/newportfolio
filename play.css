@@ -201,7 +201,7 @@ section.intro p {
 
 button.read_more {
   padding: 0.75rem 2rem;
-  border-radius: 4px;
+  border-radius: 40px;
   border-color: rgb(158, 158, 158);
   border-style: solid;
   font-size: 1rem;
@@ -215,7 +215,7 @@ button.read_more {
 
 button.read_more:hover {
   padding: 0.75rem 2rem;
-  border-radius: 4px;
+  border-radius: 40px;
   border-color: rgb(158, 158, 158);
   border-style: solid;
   font-size: 1rem;
