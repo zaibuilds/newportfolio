@@ -373,6 +373,7 @@ section.blogs h2 {
 .blogs {
   padding: 2rem 6rem;
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
   color: rgb(62, 62, 62); 
