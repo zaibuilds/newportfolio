@@ -6,7 +6,7 @@ font-family: 'Manrope', sans-serif;
 
 body {
     background-color:rgb(255, 249, 240);
-    animation: fadeInAnimation ease 3s;
+    animation: fadeInAnimation ease 5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 } 
