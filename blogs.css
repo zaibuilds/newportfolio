@@ -354,7 +354,7 @@ color: rgb(62, 62, 62);
 }
 
 
-section.live_case_studies h2 {
+section.live_blogs h2 {
   display: flex;
   justify-content: flex-start;
   font-size: 1.3rem;
@@ -362,7 +362,7 @@ section.live_case_studies h2 {
   color: rgb(62, 62, 62); 
 }
 
-section.projects h2 {
+section.blogs h2 {
   display: flex;
   justify-content: flex-start;
   font-size: 1.3rem;
@@ -370,7 +370,7 @@ section.projects h2 {
   color: rgb(62, 62, 62); 
 }
 
-.portfolio {
+.blogs {
   padding: 2rem 6rem;
   display: flex;
   justify-content: flex-start;
@@ -405,18 +405,18 @@ button.read_more:hover {
   transition: ease-in-out 0.5s;
 }
 
-.portfolio a {
+.blogs a {
   color:  rgb(255, 249, 240);
   background-color: rgb(255, 249, 240);
 }
 
-.portfolio a :hover {
+.blogs a :hover {
   color:  rgb(255, 249, 240);
   background-color: rgb(255, 249, 240);
 }
 
-.portfolio img {
-  width: 40rem;
+.blogs img {
+  width: 20rem;
   border-radius: 1.125rem;
   border: 2px solid rgb(201, 201, 201);
 }
