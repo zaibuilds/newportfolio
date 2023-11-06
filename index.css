@@ -2,6 +2,7 @@
     margin: none;
     padding: none;
 font-family: 'Manrope', sans-serif;
+color: rgb(62, 62, 62);
 }
 
 body {
@@ -28,10 +29,17 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 2rem;
 }
 
-nav img.class {
-  max-width: 12rem;
+nav img.logo {
+  max-width: 6rem;
+}
+
+nav h2 {
+  padding-left: 1rem;
+  font-weight: 600;
+  font-size: 2rem;
 }
   
 nav ul {
@@ -80,7 +88,7 @@ a.active, a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 6rem;
+    gap: 2rem;
     padding-top: 3rem;
   }
 
@@ -89,7 +97,13 @@ a.active, a:hover {
   }
 
   nav img {
-    max-width: 6rem;
+    max-width: 2rem;
+  }
+
+  nav h2 {
+    padding-left: 0.5rem;
+    font-weight: 600;
+    font-size: 1.5rem;
   }
 
   ul { 
