@@ -1,8 +1,9 @@
 * {
-    margin: none;
-    padding: none;
-    box-sizing: border-box;
+  margin: none;
+  padding: none;
+  box-sizing: border-box;
 font-family: 'Manrope', sans-serif;
+color: rgb(62, 62, 62);
 }
 
 body {
@@ -15,8 +16,14 @@ nav {
   align-items: center;
 }
 
-nav img.class {
-  max-width: 12rem;
+nav img.logo {
+  max-width: 6rem;
+}
+
+nav h2 {
+  padding-left: 1rem;
+  font-weight: 600;
+  font-size: 2rem;
 }
   
 nav ul {
@@ -73,7 +80,13 @@ a.active, a:hover {
   }
 
   nav img {
-    max-width: 6rem;
+    max-width: 2rem;
+  }
+
+  nav h2 {
+    padding-left: 0.5rem;
+    font-weight: 600;
+    font-size: 1.5rem;
   }
 
   ul { 
