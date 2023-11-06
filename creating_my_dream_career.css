@@ -170,8 +170,8 @@ a.active, a:hover {
 }
 
 .link a {
-  width: fit-content;
   width: -moz-fit-content;
+  width: fit-content;
   padding: 0.5rem 1rem;
   border-radius: 0.2rem;
 }
