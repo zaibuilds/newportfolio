@@ -136,7 +136,7 @@
     }
 
     .large_project_images img {
-      max-height: 50rem;
+      max-height: 60rem;
     }
 
     iframe {
@@ -144,6 +144,18 @@
       margin-bottom: 1rem;
       max-width: 20rem;
     }
+
+    .charts .chart_project_images img {
+      max-width: 22rem;
+     padding: 2rem 1rem 2rem 0rem;
+     overflow: hidden;
+    }
+
+    .sketch .small_project_images img {
+      max-width: 12rem;
+      overflow: hidden;
+    }
+
   
   }
   
@@ -207,12 +219,11 @@
 
 .project_images {
     padding-top: 2rem;
-    max-width: 60rem;
    
 }
 
 .project_images img {
-    max-height: 48rem;
+    max-height: 36rem;
    padding: 0rem 2rem 4rem 0rem;
 }
 
@@ -228,14 +239,11 @@ iframe {
   width: 80rem;
 }
 
-.more_project_images img {
-  margin-top: 4rem;
-  max-width: 90rem;
-  margin-bottom: 2rem;
+.chart_project_images img {
+  max-width: 50rem;
+ padding: 4rem 2rem 4rem 0rem;
 }
 
 .small_project_images img {
-  margin-top: 4rem;
-  max-width: 36rem;
-  margin-bottom: 2rem;
+  max-width: 24rem;
 }
