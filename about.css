@@ -14,6 +14,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 2rem;
 }
 
 nav img.logo {
