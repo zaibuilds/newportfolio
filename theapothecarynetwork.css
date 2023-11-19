@@ -130,6 +130,18 @@
     #check:checked ~ ul {
       left: 0;
     }
+
+    .project_image1 img {
+      max-width: 10rem;
+    }
+
+    .project_image2 img {
+      max-width: 15rem;
+    }
+
+    .project_image3 img {
+      max-width: 18rem;
+    }
   
   
   }
