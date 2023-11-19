@@ -131,15 +131,15 @@
       left: 0;
     }
 
-    .project_image1 img {
+    .project_image1 span img {
       max-width: 10rem;
     }
 
-    .project_image2 img {
+    .project_image2 span img {
       max-width: 15rem;
     }
 
-    .project_image3 img {
+    .project_image3 span img {
       max-width: 18rem;
     }
   
