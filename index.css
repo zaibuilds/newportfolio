@@ -10,7 +10,7 @@ body {
     background-color:rgb(255, 249, 240);
 } 
 
-.content {
+.container {
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
