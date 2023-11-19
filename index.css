@@ -402,7 +402,7 @@ section.projects h2 {
 }
 
 .portfolio {
-  padding: 2rem 6rem;
+  padding: 2rem 6rem 4rem 6rem;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
