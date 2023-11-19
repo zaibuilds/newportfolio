@@ -1,7 +1,7 @@
 * {
-  margin: none;
-  padding: none;
-  box-sizing: border-box;
+  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 font-family: 'Manrope', sans-serif;
 color: rgb(62, 62, 62);
 }
@@ -10,8 +10,7 @@ body {
     background-color:rgb(255, 249, 240);
 } 
 
-
-.content {
+.main {
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -32,6 +31,7 @@ nav {
   justify-content: center;
   align-items: center;
   padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 nav img.logo {
@@ -40,6 +40,7 @@ nav img.logo {
 
 nav h2 {
   padding-left: 1rem;
+  padding-right: 2rem;
   font-weight: 600;
   font-size: 2rem;
 }
@@ -90,7 +91,7 @@ a.active, a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 6rem;
+    gap: 2rem;
     padding-top: 3rem;
   }
 

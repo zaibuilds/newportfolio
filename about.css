@@ -1,6 +1,6 @@
 * {
-    margin: none;
-    padding: none;
+  margin: 0;
+    padding: 0;
     box-sizing: border-box;
 font-family: 'Manrope', sans-serif;
 color: rgb(62, 62, 62);
@@ -10,11 +10,28 @@ body {
     background-color:rgb(255, 249, 240);
 } 
 
+.main {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
 nav {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 nav img.logo {
@@ -74,7 +91,8 @@ a.active, a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 6rem;
+    gap: 2rem;
+    padding-top: 3rem;
   }
 
   .checkbtn {
