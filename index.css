@@ -174,9 +174,14 @@ font-size: 1.5rem;
     }
   }
 
+  .portfolio {
+    padding-right: 2rem;
+  }
+
   .portfolio a img {
     max-width: 20rem;
   }
+
 
 
 
