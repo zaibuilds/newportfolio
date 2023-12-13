@@ -452,6 +452,14 @@ button.read_more:hover {
   max-width: 60rem;
 }
 
+.portfolio h4 {
+  padding: 1rem 0rem 1rem 0rem;
+}
+
+.portfolio p {
+  padding: 1rem 0rem 1rem 0rem;
+}
+
 section.footer {
   margin-top: 4rem;
   background-color: rgb(57, 57, 57);
